@@ -8,7 +8,7 @@ git clone git@github.com:SimeonOA/robot_gasket_assembly.git
 cd robot_gasket_assembly/
 conda env create -f environment.yml
 ```
-Note: You will need to separately install ur5py, ur_rtde (make sure it's version 1.4.2!), and pyzed (if you want to use a ZED camera!)
+Note: You will need to separately install [ur5py](https://github.com/TianshuangQiu/ur5py.git), ur_rtde (make sure it's version 1.4.2!), and pyzed (if you want to use a ZED camera)!
 
 ## Calibration
 This implementation requires an overhead camera calibrated to the robot such that a pixel from the overhead's camera can be translated to the appropriate x,y coordinate of that point in the robot's frame. Reference calibration/image_robot.py if necessary.
