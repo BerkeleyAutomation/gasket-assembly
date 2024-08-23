@@ -270,6 +270,7 @@ def main():
                 cable_skeleton, cable_length, cable_endpoints, cable_mask_binary = detect_cable(rgb_img, args)
                 slide_end_pose = one_end_attached(cable_mask_binary, cable_endpoints, channel_endpoints, matched_template, second_endpt_side)
     elif matched_template == "trapezoid":
+        # Note: This implementation is in need of refactoring
         trapezoid_actuation(channel_cnt, channel_cnt_mask, channel_skeleton, VIZ, overhead_cam, args, PICK_MODE, robot, matched_template)
     
     #### SLIDING/PRESSING ####
